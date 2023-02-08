@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@mixin txt ($ff, $fst, $fw, $fsz, $lh, $clr) {
+    font-family: $ff;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lh;
+    color: $clr;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F8F9FF;
+    ;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+.top {
+    background-image: url(img/background-top.png);
+    background-size: cover;
+}
+
+.header-font {
+    @include txt(('Roboto', sans-serif), normal, 400, 16px, 19px, #8794BA)
+}
+
+.top__heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 50px, 120%, #FFFFFF)
+}
+
+.top__text {
+    @include txt(('Roboto', sans-serif), normal, 400, 18px, 150%, #8794BA)
+}
+
+.top__button {
+    @include txt(('Roboto', sans-serif), normal, 400, 16px, 19px, #FFFFFF)
+}
+
+.content__font-heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 40px, 47px, #172755)
+}
+
+.content__font-text {
+    @include txt(('Roboto', sans-serif), normal, 400, 18px, 150%, #8794BA)
+}
+
+.features__heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 16px, 19px, #172755)
+}
+
+.features__text {
+    @include txt(('Roboto', sans-serif), normal, 400, 16px, 140%, #8794BA)
+}
+
+.pricing {
+    background-image: url(img/bg-pricing.png);
+    background-size: cover;
+}
+
+.pricing__heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 40px, 47px, #FFFFFF)
+}
+
+.pricing__text {
+    @include txt(('Roboto', sans-serif), normal, 400, 18px, 150%, #8794BA)
+}
+
+.plans__name {
+    @include txt(('Roboto', sans-serif), normal, 700, 30px, 35px, #FFFFFF)
+}
+
+.plans__name-center {
+    @include txt(('Roboto', sans-serif), normal, 700, 30px, 35px, #172755)
+}
+
+.plans__description {
+    @include txt(('Roboto', sans-serif), normal, 400, 18px, 150%, #8794BA)
+}
+
+.plans__price-number {
+    @include txt(('Roboto', sans-serif), normal, 700, 30px, 35px, #FFFFFF)
+}
+
+.plans__price-number-center {
+    @include txt(('Roboto', sans-serif), normal, 700, 30px, 35px, #172755)
+}
+
+.plans__price {
+    @include txt(('Roboto', sans-serif), normal, 400, 16px, 140%, #8794BA)
+}
+
+.plans__button {
+    @include txt(('Roboto', sans-serif), normal, 400, 16px, 19px, #FFFFFF)
+}
+
+.clients__heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 32px, 40px, #160637)
+}
+
+.clients__text {
+    @include txt(('Roboto', sans-serif), normal, 500, 16px, 24px, #8989A2)
+}
+
+.form__heading {
+    @include txt(('Roboto', sans-serif), normal, 700, 24px, 32px, #160637)
+}
+
+.form__button {
+    @include txt(('Roboto', sans-serif), normal, 500, 16px, 24px, #FFFFFF)
+}
+
+.input_font {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.form__rating-text {
+    @include txt(('Roboto', sans-serif), normal, 500, 16px, 19px, #000000)
+}
+
+.form__text-bottom {
+    @include txt(('Roboto', sans-serif), normal, 500, 14px, 16px, #8989A2)
+}
+
+.form__login {
+    @include txt(('Roboto', sans-serif), normal, 500, 14px, 16px, #722ED1)
+}
+
+.footer {
+    background-color: #1F2F5C;
+}
+
+.footer__menu-link {
+    @include txt(('Roboto', sans-serif), normal, 400, 14px, 16px, #8794BA)
+}
