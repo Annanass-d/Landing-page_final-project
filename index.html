@@ -48,7 +48,7 @@
 
         </div>
         <div class="top__charts">
-            <img src="img/top-all-charts.png" alt="top charts">
+            <img src="img/top-all-charts.svg" alt="top charts">
         </div>
     </section>
 
@@ -165,10 +165,10 @@
             <div class="contact__clients">
                 <h3 class="clients__heading">See why the world&rsquo;s best companies use Analytics</h3>
                 <div class="clients__content">
-                    <div class="clients__box1">
-                        <img src="img/line.svg" alt="line">
+                    <div class="clients__box-center">
+                        <img class="clients__line" src="img/line.svg" alt="line">
                         <p class="clients__text">Trusted&nbsp;by</p>
-                        <img src="img/line.svg" alt="line">
+                        <img class="clients__line" src="img/line.svg" alt="line">
                     </div>
 
                     <div class="clients__logos">
@@ -191,15 +191,36 @@
                 <div class="signup-form__substrate"></div>
                 <div class="signup-form__form">
                     <h4 class="form__heading">Sign&nbsp;Up</h4>
-                    <form action="#">
-                        <button class="form__button" type="submit">Start your free trial</button>
-                        <input class="contact__input" type="email" placeholder="Your primary email">
-                        <input class="contact__input" type="password" placeholder="Password">
-                        <input class="contact__input" type="password" placeholder="Re-type Password">
+                    <form class="contact__form">
+                        <button class="form__button" type="submit" name="form__button">Start your free trial</button>
+                        <input class="contact__input" id="email" type="email" name="form__email" placeholder="Your primary email">
+                        <input class="contact__input" id="password" type="password" name="form__password" placeholder="Password">
+                        <input class="contact__input" id="password-retry" type="password" name="form__password" placeholder="Re-type Password">
                         <h5 class="form__rating-text">Help&nbsp;us get better</h5>
-                        <input type="text">
+                        <div class="rating">
+                            <div class="rating_sign">
+                                <label class="rating_sign_label" for="1"><i class="fa-solid fa-star"></i></label>
+                                <input class="rating_sign_input" type="radio" name="rating" id="1" value="1">
+                            </div>
+                            <div class="rating_sign">
+                                <label class="rating_sign_label" for="2"><i class="fa-solid fa-star"></i></label>
+                                <input class="rating_sign_input" type="radio" name="rating" id="2" value="2">
+                            </div>
+                            <div class="rating_sign">
+                                <label class="rating_sign_label" for="3"><i class="fa-solid fa-star"></i></label>
+                                <input class="rating_sign_input" type="radio" name="rating" id="3" value="3">
+                            </div>
+                            <div class="rating_sign">
+                                <label class="rating_sign_label" for="4"><i class="fa-solid fa-star"></i></label>
+                                <input class="rating_sign_input" type="radio" name="rating" id="4" value="4">
+                            </div>
+                            <div class="rating_sign">
+                                <label class="rating_sign_label" for="5"><i class="fa-solid fa-star"></i></label>
+                                <input class="rating_sign_input" type="radio" name="rating" id="5" value="5">
+                            </div>
+                        </div>
                     </form>
-                    <img src="img/line-long.svg" alt="line-long">
+                    <img class="form__splitter" src="img/line-long.svg" alt="line-long">
                     <p class="form__text-bottom">
                         Already have an&nbsp;account?
                         <a href="#" class="form__login">Login</a>
@@ -233,6 +254,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -302,8 +302,8 @@ body {
 }
 
 .plans__button-center:hover {
-    color: #8794BA;
-    background-color: #ffffff0c;
+    color: #172755;
+    background-color: transparent;
     border: 1px solid #465B95;
 }
 
@@ -327,9 +327,13 @@ body {
     margin-bottom: 75px;
 }
 
-.clients__box1 {
+.clients__box-center {
     display: flex;
     margin-bottom: 50px;
+}
+
+.clients__line {
+    max-width: 33%;
 }
 
 .clients__text {
@@ -411,6 +415,27 @@ body {
 .form__rating-text {
     @include txt(('Roboto', sans-serif), normal, 500, 16px, 19px, #000000);
     margin-bottom: 16px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-star {
+    color: #8989A2;
+}
+
+.check {
+    color: #FFD36F;
+}
+
+.rating_sign_input {
+    visibility: hidden;
+}
+
+.form__splitter {
+    max-width: 90%;
 }
 
 .form__text-bottom {
