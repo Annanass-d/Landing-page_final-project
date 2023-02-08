@@ -14,13 +14,23 @@ body {
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1146px;
   margin: 0 auto;
 }
 
 .top {
   background-image: url(img/background-top.png);
   background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 55px;
+}
+
+.top__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 74px;
 }
 
 .header-font {
@@ -32,6 +42,55 @@ body {
   color: #8794BA;
 }
 
+.header__left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 85px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-link {
+  padding: 0 17px;
+  transition: color 0.3s;
+}
+
+.header__enter-signin {
+  margin-right: 40px;
+  transition: color 0.3s;
+}
+
+.header__enter-button {
+  background-color: transparent;
+  border: 1px solid #465B95;
+  border-radius: 68px;
+  padding: 10px 53px;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.header__enter-button:hover {
+  color: #FFFFFF;
+  background-color: #EF2A82;
+  border-color: transparent;
+}
+
+.top__content {
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 260px;
+}
+
+.top__text-block {
+  max-width: 550px;
+}
+
 .top__heading {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -39,6 +98,7 @@ body {
   font-size: 50px;
   line-height: 120%;
   color: #FFFFFF;
+  margin-bottom: 15px;
 }
 
 .top__text {
@@ -48,6 +108,7 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #8794BA;
+  margin-bottom: 50px;
 }
 
 .top__button {
@@ -57,6 +118,32 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  background-color: #EF2A82;
+  border-radius: 68px;
+  border: 1px solid transparent;
+  padding: 10px 80px;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.top__button:hover {
+  color: #8794BA;
+  background-color: rgba(255, 255, 255, 0.0470588235);
+  border: 1px solid #465B95;
+}
+
+.top__charts {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+}
+
+.content__features {
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.features__heading {
+  margin-bottom: 30px;
 }
 
 .content__font-heading {
@@ -68,6 +155,11 @@ body {
   color: #172755;
 }
 
+.features__text {
+  margin-bottom: 80px;
+  padding: 0 50px;
+}
+
 .content__font-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -77,16 +169,30 @@ body {
   color: #8794BA;
 }
 
-.features__heading {
+.features__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__icon {
+  margin-bottom: 26px;
+}
+
+.features__box-item {
+  width: 32%;
+}
+
+.features__item-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #172755;
+  margin-bottom: 15px;
 }
 
-.features__text {
+.features__item-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -95,9 +201,32 @@ body {
   color: #8794BA;
 }
 
+.tools-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.tools__content {
+  width: 40%;
+  padding-top: 90px;
+}
+
+.tools__title {
+  margin-bottom: 30px;
+}
+
+.tool-img {
+  border-radius: 30px;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  width: 50%;
+}
+
 .pricing {
   background-image: url(img/bg-pricing.png);
   background-size: cover;
+  text-align: center;
+  padding-bottom: 160px;
 }
 
 .pricing__heading {
@@ -107,6 +236,8 @@ body {
   font-size: 40px;
   line-height: 47px;
   color: #FFFFFF;
+  padding-top: 255px;
+  padding-bottom: 30px;
 }
 
 .pricing__text {
@@ -116,6 +247,35 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #8794BA;
+  padding: 0 230px;
+  margin-bottom: 80px;
+}
+
+.pricing__plans {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plans-item {
+  width: 30%;
+}
+
+.plans__starter {
+  background: rgb(15, 31, 75);
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+}
+
+.plans__standard {
+  background: #FFFFFF;
+  box-shadow: 0px 18px 50px -15px #060F28;
+  border-radius: 30px;
+}
+
+.plans__premium {
+  background: rgb(15, 31, 75);
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
 }
 
 .plans__name {
@@ -125,6 +285,8 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #FFFFFF;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .plans__name-center {
@@ -134,6 +296,8 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #172755;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .plans__description {
@@ -143,6 +307,11 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #8794BA;
+  margin-bottom: 37px;
+}
+
+.plan-splitter {
+  max-width: 80%;
 }
 
 .plans__price-number {
@@ -152,6 +321,7 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #FFFFFF;
+  margin-top: 28px;
 }
 
 .plans__price-number-center {
@@ -161,6 +331,7 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #172755;
+  margin-top: 28px;
 }
 
 .plans__price {
@@ -170,6 +341,7 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: #8794BA;
+  margin-bottom: 40px;
 }
 
 .plans__button {
@@ -179,6 +351,53 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  border: 1px solid #2A407C;
+  border-radius: 68px;
+  padding: 10px 80px;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-bottom: 70px;
+}
+
+.plans__button:hover {
+  background-color: #EF2A82;
+  border-color: transparent;
+}
+
+.plans__button-center {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #EF2A82;
+  border-radius: 68px;
+  padding: 10px 83px;
+  border: 1px solid transparent;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+  margin-bottom: 70px;
+}
+
+.plans__button-center:hover {
+  color: #8794BA;
+  background-color: rgba(255, 255, 255, 0.0470588235);
+  border: 1px solid #465B95;
+}
+
+.contact {
+  padding-top: 110px;
+  padding-bottom: 150px;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__clients {
+  width: 40%;
+  padding-top: 45px;
 }
 
 .clients__heading {
@@ -188,6 +407,12 @@ body {
   font-size: 32px;
   line-height: 40px;
   color: #160637;
+  margin-bottom: 75px;
+}
+
+.clients__box1 {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .clients__text {
@@ -197,6 +422,41 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #8989A2;
+  margin: 0 25px;
+}
+
+.clients__logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients__logo-link {
+  width: 50%;
+  margin-bottom: 75px;
+}
+
+.contact__signup-form {
+  width: 40%;
+  position: relative;
+}
+
+.signup-form__substrate {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  background-color: #F9F0FF;
+  z-index: -1;
+  top: 42px;
+  left: 0;
+}
+
+.signup-form__form {
+  margin-left: 30px;
+  text-align: center;
+  padding: 35px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+  border-radius: 8px;
 }
 
 .form__heading {
@@ -206,6 +466,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #160637;
+  margin-bottom: 16px;
 }
 
 .form__button {
@@ -215,14 +476,32 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+  background-color: #722ED1;
+  border: none;
+  padding: 12px 70px;
+  border-radius: 4px;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  transition: background-color 0.3s;
+  margin-bottom: 16px;
+  width: 100%;
 }
 
-.input_font {
+.form__button:hover {
+  background-color: #EF2A82;
+}
+
+.contact__input {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 16px;
+  color: #160637;
+  margin-bottom: 16px;
+  width: 100%;
 }
 
 .form__rating-text {
@@ -232,6 +511,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  margin-bottom: 16px;
 }
 
 .form__text-bottom {
@@ -241,6 +521,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #8989A2;
+  margin-top: 16px;
 }
 
 .form__login {
@@ -250,10 +531,28 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #722ED1;
+  transition: color 0.3s;
+}
+
+.form__login:hover {
+  color: #EF2A82;
 }
 
 .footer {
   background-color: #1F2F5C;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__menu-link {
@@ -263,4 +562,26 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #8794BA;
+  transition: color 0.3s;
+  padding: 0 17px;
+}
+
+.footer__icon-link {
+  padding: 0 20px;
+}
+
+.fa-brands {
+  font-size: 22px;
+  color: #8794BA;
+  transition: color 0.3s;
+}
+
+.hover-link:hover {
+  color: #EF2A82;
+}
+
+.hover-btn-transp:hover {
+  color: #FFFFFF;
+  background-color: #EF2A82;
+  border-color: transparent;
 }/*# sourceMappingURL=style.css.map */
