@@ -50,3 +50,10 @@ formEl.addEventListener('submit', function (e) {
     } 
 });
 
+const menuIcon = document.querySelector('.header__menu-icon');
+const menuHidden = document.querySelector('.menu-hidden-box');
+
+menuIcon.addEventListener('click', function (e) {
+    menuHidden.classList.toggle('hidden'); 
+});
+
